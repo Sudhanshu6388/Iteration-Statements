@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration_Statements</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body{
+            border: 5px solid black;
+            border-radius: 10px;
+            background-color: peachpuff;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1 style="color: purple;  text-decoration: underline; " >Iteration Statements</h1>
+    </center>
+    <center>
+        <div class="box"  id="box_1">
+            <h2>1. Find the number of digits</h2>
+        <pre style="font-size: 15px; ">
+          const Find_Digits = (N) => {
+            var count=0;
+            while(N>=1){
+              N=N/10;
+              count++;
+            }
+            return count++;
+          };
+       </pre >
+        </div>
+       <hr>
+       <div class="box" id="box_2">
+        <h2>2.Find the Fives</h2>
+        <pre style="font-size: 15px ;" >
+          const Find_Five = (N) => 
+          {
+             var rem, count=0;
+            while(N>=1) {
+               rem=N%10;
+               N=parseInt(N/10);
+               if(rem===5){
+                 count++;
+               }
+               
+             }
+             return count;
+          };
+    </pre>
+       </div>
+    <hr>
+    <div class="box" id="box_3">
+        <h2>3. Find Sum</h2>
+    <pre style="font-size: 15px;">
+      const findSum = (n) => {
+        var sum=0;
+        for(let i=1;i<=n;i++){
+          if(i%2===0){
+            sum=sum+i;
+          }
+        }
+        return sum;
+      }
+    </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_4">
+        <h2>4.Find the sum of the digits of a given numbers</h2>
+    <pre style="font-size: 15px;">
+      const Number_Sum = (N) => 
+{ var sum=0, rem ;
+	while(N>=1){
+	  rem=N%10;
+	  N=parseInt(N/10);
+	  sum =sum+rem;
+	}
+	return sum ;
+};
+  </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_5">
+        <h2>5. Prints the Odds</h2>
+    <pre style="font-size: 15px;">
+      const Print_Odd = (N) => 
+{
+	for(let i=2;i<=N;i++){
+	  if(i===2){
+	   console.log(i);
+	  }
+	  else{
+	    if(i%2===1){
+	     console.log(i);
+	    }
+	    
+	  }
+	}
+};
+  </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_6">
+        <h2>6. Print the Pattern .</h2>
+    <pre style="font-size: 15px;">
+      const Print_pattern = (N) => 
+{ 
+  for( var i=1; i<=N; i++){
+            var space=" ";
+            for( var j=1; j<=i; j++){
+              space=space+"*";
+            }
+            console.log(space);
+          }
+
+};
+  </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_7">
+        <h2>7. Check whether a Number is a prime or not.</h2>
+    <pre style="font-size: 15px;">
+      const Prime_Check = (N) => 
+      {  if(N===1){
+        return "NO"
+      }
+          else{
+          for(var i=2; i < N ; i++){
+          if( N%i === 0){
+          return "NO";
+            }
+          }
+        return "YES";
+            
+          }
+      };
+  </pre>
+    </div>
+    <hr>
+    <div class="box" id="box_8">
+        <h2>8. Print Numbers. </h2>
+    <pre style="font-size: 15px;">
+      const printNumbers = (n) => {
+        for(let i=1;i<=n;i++){
+          console.log(i);
+        }
+   };
+   
+  </pre>
+    </div>
+    
+    <hr>
+    <div class="box" id="box_9">
+        <h2>9. Print the Table</h2>
+    <pre style="font-size: 15px;">
+      const Print_Table = (N) => 
+{
+	 for(let i=1;i<=10;i++){
+	   console.log(`${N} * ${i} =` ,N*i)
+	 }
+
+};
+       </pre>
+    </div>
+    </center>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
